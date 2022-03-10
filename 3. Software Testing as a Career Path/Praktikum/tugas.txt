@@ -1,0 +1,9 @@
+## Membuat 4 liter air
+# Pertama 
+Isi penuh ember 3L lalu tuangkan ke ember 5L, jadi yang ada di ember 3L kosong
+# Kedua
+Isi penuh kembali ember 3L, tuangkan ember yang 3L ke dalam ember 5L sampai penuh, jadi yang di ember 3L sisa 1L
+# Ketiga
+Pada ember 5L airnya dibuang lalu tuangkan air 1L yang ada di ember 3L, jadi ember yang di 3L kosong
+# keempat
+Lalu isi kembali ember 3L dengan air hingga penuh dan tuangkan ke dalam ember 5L yang sudah berisi air 1L, jadi pada ember 5L berisi air 4L
