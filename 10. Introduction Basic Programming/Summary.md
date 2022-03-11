@@ -71,8 +71,22 @@
      ![luassegitiga](./Screenshoots/luassegitiga.png)
   2. Konversi Nilai
      ![konversinilai](./Screenshoots/konversinilai.png)
-     
   3. Faktor Bilangan 
+     ![faktorbilangan](./Screenshoots/faktorbilangan.png)
   4. Faktor Bilangan II
+     ![faktorbilangan2](./Screenshoots/faktorbilangan2.png)
   5. Bilangan Prima
+     ![bilangaprima](./Screenshoots/bilanganprima.png)
   6. Palindrome 
+     ![palindrome](./Screenshoots/palindrome.png)
+  7. Exponentiation
+     ![exponentition](./Screenshoots/exponentiation.png)
+  8. Play With Asteristik
+     ![plawithasteristik](./Screenshoots/playwithasteristik.png)
+  9. Draw XYZ
+     ![drawxzy](./Screenshoots/drawxyz.png)
+  10. Cetak Tabel Perkalian
+      ![cetaktabelperkalian](./Screenshoots/cetaktabelperkalian.png)
+  11. Ubah Huruf
+  12. Mean
+      ![mean](./Screenshoots/mean.png)
