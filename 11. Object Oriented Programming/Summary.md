@@ -46,9 +46,11 @@
 
 # TASK
 1. Menghitung luas dan keliling
-   ![bangundatar](./Screenshoots/)
+   ![bangundatar](./Screenshoots/luasdankeliling.png)
 2. Menghitung volume
-   ![volume](./)
+   ![volume](./Screenshoots/volume.png)
 3. Kalkulator
+   ![kalkulator](./Screenshoots/kalkulator.png)
 4. Ongkos kirim
+   ![ongkir](./Screenshoots/ongkoskirim.png)
 5. Pewarisan
