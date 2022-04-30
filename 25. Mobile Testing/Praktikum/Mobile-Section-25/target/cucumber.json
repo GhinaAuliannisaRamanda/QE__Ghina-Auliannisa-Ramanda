@@ -1,0 +1,259 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-29T15:39:21.259Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14704080600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "As a user, i want to get sum results",
+        "description": "",
+        "id": "calculate-operation;as-a-user--i-want-to-get-sum-results",
+        "after": [
+          {
+            "result": {
+              "duration": 758049400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3468673800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to calculate",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iWantToCalculate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 157248800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click button number \"5\" on the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonNumberOnTheList(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 153274600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click button plus on the list",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonPlusOnTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 753413900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click button number \"4\" on the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonNumberOnTheList(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 721408600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click button equal",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonEqual()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1638830900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 6
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iGetThe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-29T15:39:44.150Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14342885300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "As a user, i want to get subtraction",
+        "description": "",
+        "id": "calculate-operation;as-a-user--i-want-to-get-subtraction",
+        "after": [
+          {
+            "result": {
+              "duration": 835715600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3514460800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I want to calculate",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iWantToCalculate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123604900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click button number \"9\" on the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonNumberOnTheList(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 156335000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click button min on the list",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonMinOnTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157478000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click button number \"3\" on the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonNumberOnTheList(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 789673400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click button equal",
+            "match": {
+              "location": "com.example.steps.CalculatorStepDefinitions.iClickButtonEqual()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1698400200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I get 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 6
+                }
+              ],
+              "location": "com.example.steps.CalculatorStepDefinitions.iGetThe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculate Operation",
+    "description": "",
+    "id": "calculate-operation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/math/calculate_numbers.feature",
+    "tags": []
+  }
+]

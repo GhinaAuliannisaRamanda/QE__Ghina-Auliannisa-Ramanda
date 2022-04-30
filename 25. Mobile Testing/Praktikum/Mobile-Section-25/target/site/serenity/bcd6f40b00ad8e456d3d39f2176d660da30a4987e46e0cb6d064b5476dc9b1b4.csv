@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Calculate Operation","As a user, i want to get sum results","SUCCESS","2022-04-29T22:35:04.0219862+07:00[Asia/Jakarta]","0.0","23.37"
+"Calculate Operation","As a user, i want to get subtraction","SUCCESS","2022-04-29T22:35:27.4346906+07:00[Asia/Jakarta]","0.0","22.75"

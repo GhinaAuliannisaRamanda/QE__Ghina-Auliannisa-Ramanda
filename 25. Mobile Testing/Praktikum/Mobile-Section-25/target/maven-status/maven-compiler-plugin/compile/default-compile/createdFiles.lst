@@ -1,0 +1,3 @@
+com\example\app\drivers\AndroidDriverInit.class
+com\example\app\pages\MyCalculatorPage.class
+com\example\app\base\BasePageObject.class
