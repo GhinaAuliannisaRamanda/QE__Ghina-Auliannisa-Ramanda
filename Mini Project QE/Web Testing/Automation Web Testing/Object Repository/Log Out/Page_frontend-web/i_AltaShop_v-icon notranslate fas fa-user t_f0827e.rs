@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_AltaShop_v-icon notranslate fas fa-user t_f0827e</name>
+   <tag></tag>
+   <elementGuidId>038c343c-a51a-400e-bd5e-a8559c5f7fb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.v-icon.notranslate.fas.fa-user.theme--dark</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/header/div/button[2]/span/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>f9e7a00d-adfa-430b-9815-cd1d6a50abc4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>cf652589-2e37-4d27-b3f7-57086e142c69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-icon notranslate fas fa-user theme--dark</value>
+      <webElementGuid>1f8b596f-bb79-48a9-b276-aebd92cfa99f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/header[@class=&quot;v-sheet theme--dark v-toolbar v-app-bar v-app-bar--fixed deep-purple accent-4&quot;]/div[@class=&quot;v-toolbar__content&quot;]/button[@class=&quot;v-btn v-btn--icon v-btn--round theme--dark v-size--default&quot;]/span[@class=&quot;v-btn__content&quot;]/i[@class=&quot;v-icon notranslate fas fa-user theme--dark&quot;]</value>
+      <webElementGuid>37376f81-ccde-4cca-b785-178e6f6f274c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/header/div/button[2]/span/i</value>
+      <webElementGuid>5fb3ee50-3f2f-4810-a6da-4b8a1f304339</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span/i</value>
+      <webElementGuid>d5017ed6-3c53-4fa7-b7ff-e118fbf73481</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

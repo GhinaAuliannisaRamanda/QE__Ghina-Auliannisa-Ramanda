@@ -1,0 +1,909 @@
+{
+	"info": {
+		"_postman_id": "d8352946-37af-44e7-910e-ce68692c0963",
+		"name": "Automation API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20068117"
+	},
+	"item": [
+		{
+			"name": "Categories Copy",
+			"item": [
+				{
+					"name": "GET Categories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has oke\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create Category",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches name\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Makanan\");\r",
+									"});\r",
+									"pm.test(\"Body matches description\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Bakso Lava\");\r",
+									"});\r",
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Makanan\",\r\n  \"Description\": \"Bakso Lava\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Categories with Invalid URL",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"pm.test(\"Status code name has error massage\", function () {\r",
+									"    pm.response.to.have.status(\"Not Found\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories123",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Copy",
+			"item": [
+				{
+					"name": "GET Products",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches name\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Handphone\");\r",
+									"});\r",
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "tokentokentokentokentoken",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Handphone\",\r\n  \"price\": 12000,\r\n  \"categories\": [\r\n      3,\r\n      10\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT BY ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has oke\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/1468",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"1468"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product By Invalid ID Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"pm.test(\"Status code name has error massage\", function () {\r",
+									"    pm.response.to.have.status(\"Not Found\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/777",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"777"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication Copy",
+			"item": [
+				{
+					"name": "POST Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"pm.test(\"Body matches BearerToken\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA\");\r",
+									"});\r",
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "tokentokentokentokentoken",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ghinaaulia33@gmail.com\",\r\n  \"password\": \"123123123\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Aunthetication with invalid method",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 405\", function () {\r",
+									"    pm.response.to.have.status(405);\r",
+									"});\r",
+									"pm.test(\"Status code name has Error Massage\", function () {\r",
+									"    pm.response.to.have.status(\"Method Not Allowed\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ghinaaulia33@gmail.com\",\r\n  \"password\": \"123123123\"\r\n   }"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction Copy",
+			"item": [
+				{
+					"name": "POST Create Transaction",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"pm.test(\"Body matches Quantity\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"3\");\r",
+									"});\r",
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"product_id\": 1844,\r\n    \"quantity\": 3\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Transaction with other user id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});\r",
+									"pm.test(\"Status code name has Unauthorized\", function () {\r",
+									"    pm.response.to.have.status(\"Unauthorized\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders/770",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders",
+								"770"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Transaction",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ratings Copy",
+			"item": [
+				{
+					"name": "POST GIVE RATINGS PRODUCT",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches ID\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"1857\");\r",
+									"});\r",
+									"pm.test(\"Body matches Ratings\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"5\");\r",
+									"});\r",
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/1857/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"1857",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT RATINGS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches Rating's\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"5\");\r",
+									"});\r",
+									"pm.test(\"Successful GET request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/1857/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"1857",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product Ratings With Invalid Url",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"pm.test(\"Status code name has Error Massage\", function () {\r",
+									"    pm.response.to.have.status(\"Not Found\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/comments/467/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"comments",
+								"467",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments Copy",
+			"item": [
+				{
+					"name": "POST Write Comment to a Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches Content\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"mantap nih\");\r",
+									"});\r",
+									"pm.test(\"Body matches Data\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ID\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"mantap nih \"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/594/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"594",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCTS COMMENTS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/594/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"594",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products Comments With Maximum Value ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"pm.test(\"Status code name has Bad Request\", function () {\r",
+									"    pm.response.to.have.status(\"Bad Request\");\r",
+									"});\r",
+									"pm.test(\"Body matches Error Massage\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"value out of range\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/10000000000000000000/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"10000000000000000000",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

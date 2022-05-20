@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_LoginEmailPasswordLogin Belum memiliki _4d7311</name>
+   <tag></tag>
+   <elementGuidId>ed393a6f-e443-40a8-b393-fae9d24d95bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.container</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/main/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7b092d62-2a96-4eb9-8774-9dc69ac55dcf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>container</value>
+      <webElementGuid>c3f7db77-2bce-4add-8a38-61301294a16a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>LoginEmailPasswordLogin Belum memiliki akun? Register</value>
+      <webElementGuid>8f0be8b4-d096-4824-9b45-18c6a7516829</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-main&quot;]/div[@class=&quot;v-main__wrap&quot;]/div[@class=&quot;container&quot;]</value>
+      <webElementGuid>e92eb0d0-43f9-41fc-aa6f-c5d3ecd5edb0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/main/div/div</value>
+      <webElementGuid>22ecc807-097f-4cc2-a452-766ff8080f4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AltaShop'])[1]/following::div[3]</value>
+      <webElementGuid>f6741e56-fdb5-4d5f-ab06-b770d193e1fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div</value>
+      <webElementGuid>27932d29-8acc-44e8-a9a9-964b9b489e9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'LoginEmailPasswordLogin Belum memiliki akun? Register' or . = 'LoginEmailPasswordLogin Belum memiliki akun? Register')]</value>
+      <webElementGuid>4ab60fe2-997a-4421-a739-d754310d930d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

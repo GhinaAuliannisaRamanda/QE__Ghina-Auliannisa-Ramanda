@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>halaman_transaksi</name>
+   <tag></tag>
+   <elementGuidId>a830e097-e10c-4ceb-bf90-4503bff8808a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div/div[1]/main/div/div/div/div/div[1]/table/thead/tr/th[1]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>c3488142-9d9d-4864-b6a8-8ad567708836</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>ec566a86-2ce0-49ec-a30a-bdf7cb653dd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-icon notranslate v-data-table-header__icon fas fa-sort-up theme--light</value>
+      <webElementGuid>49e38cd8-4006-4352-b890-2368a6ee8038</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div/div[1]/main/div/div/div/div/div[1]/table/thead/tr/th[1]/span</value>
+      <webElementGuid>484638ad-16bb-4c41-8d42-7fff9b77cbbb</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

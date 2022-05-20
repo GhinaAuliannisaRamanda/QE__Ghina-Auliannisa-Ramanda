@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_SearchCategory</name>
+   <tag></tag>
+   <elementGuidId>dcad873a-fdd9-4d1b-a551-9896a6b4517a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.v-select__selections</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/main/div/div/div/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7128f0dd-3f4b-4d77-b9fb-210a12086b55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-select__selections</value>
+      <webElementGuid>d80ad47a-61ff-4bb1-8baa-73634e60a9e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-main&quot;]/div[@class=&quot;v-main__wrap&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;v-input v-input--is-focused theme--light v-text-field v-text-field--single-line v-text-field--solo v-text-field--is-booted v-text-field--enclosed v-select primary--text&quot;]/div[@class=&quot;v-input__control&quot;]/div[@class=&quot;v-input__slot&quot;]/div[@class=&quot;v-select__slot&quot;]/div[@class=&quot;v-select__selections&quot;]</value>
+      <webElementGuid>9b3a288e-5e83-4e36-8897-441d019cabef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/main/div/div/div/div/div/div/div</value>
+      <webElementGuid>ee09cfcb-c2b7-4b03-a2e5-56ed099b09ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AltaShop'])[1]/following::div[8]</value>
+      <webElementGuid>07139245-70b1-4504-b9a0-5a9248818439</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tensi Darah Elektrik'])[1]/preceding::div[9]</value>
+      <webElementGuid>e08cf77b-7173-4b3b-bf71-74fdf92d709c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/div/div</value>
+      <webElementGuid>bd405a70-7f0d-4ef0-a13f-fb4ea935e88c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

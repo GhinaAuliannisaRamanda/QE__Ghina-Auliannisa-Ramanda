@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "904f12f6-15ad-4ecc-a60f-f7910951eb1e",
+		"name": "Manual Test API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20068117"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "GET Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Makanan\",\r\n  \"Description\": \"Bakso Lava\"\r\n}"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Categories with Invalid URL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/categories123",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"categories123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "GET Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Handphone\",\r\n  \"price\": 12000,\r\n  \"categories\": [\r\n      3,\r\n      10\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/1468",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"1468"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product By Invalid ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/888",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"888"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "POST Register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "tokentokentokentokentoken",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fullname\": \"nisa\",\r\n  \"email\": \"ghinaaulia33@gmail.com\",\r\n  \"password\": \"123123123\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "tokentokentokentokentoken",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ghinaaulia33@gmail.com\",\r\n  \"password\": \"123123123\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Aunthetication with invalid method",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"ghinaaulia33@gmail.com\",\r\n  \"password\": \"123123123\"\r\n   }"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "POST Create Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"product_id\": 1844,\r\n    \"quantity\": 3\r\n  }\r\n]"
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Transaction with other user id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/orders/770",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"orders",
+								"770"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ratings",
+			"item": [
+				{
+					"name": "POST GIVE RATINGS PRODUCT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"count\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/1857/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"1857",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT RATINGS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/467/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"467",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Product Ratings With Invalid Url",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/comments/467/ratings",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"comments",
+								"467",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "POST Write Comment to a Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Im5pc2EiLCJFbWFpbCI6ImdoaW5hYXVsaWEzM0BnbWFpbC5jb20ifQ.rmn5_XZqeOnf9HHtIWWWvZS6C4LoI_7PQsp_RWhn9EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"content\": \"mantap nih\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/594/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"594",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCTS COMMENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/594/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"594",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products Comments With Maximum Value ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://be-qa.alta.id/api/products/10000000000000000000/comments",
+							"protocol": "https",
+							"host": [
+								"be-qa",
+								"alta",
+								"id"
+							],
+							"path": [
+								"api",
+								"products",
+								"10000000000000000000",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

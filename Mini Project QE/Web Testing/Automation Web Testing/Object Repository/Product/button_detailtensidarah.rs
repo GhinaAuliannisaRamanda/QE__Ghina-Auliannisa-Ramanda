@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_detailtensidarah</name>
+   <tag></tag>
+   <elementGuidId>41b4b8d1-9460-4c1a-b004-e76cb5bff115</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-main&quot;]/div[@class=&quot;v-main__wrap&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;mx-auto mt-8 v-card v-sheet theme--light&quot;]/div[@class=&quot;v-card__text&quot;][count(. | //*[(text() = 'Cincin EmasAksesorisRp 1000000000 (3)' or . = 'Cincin EmasAksesorisRp 1000000000 (3)')]) = count(//*[(text() = 'Cincin EmasAksesorisRp 1000000000 (3)' or . = 'Cincin EmasAksesorisRp 1000000000 (3)')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.v-card__text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/main/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ffc0f1bd-cd3a-4fd6-8e77-945ea647b092</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>v-card__text</value>
+      <webElementGuid>998bad88-3b14-4f21-96de-a00aadd7363e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cincin EmasAksesorisRp 1000000000 (3)</value>
+      <webElementGuid>b9c0761b-9035-4aef-ae44-149289f24dbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div/div/main/div/div/div/div</value>
+      <webElementGuid>4e22eb08-e854-4fd4-a6ff-71aa5a0ff162</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/main/div/div/div/div</value>
+      <webElementGuid>6c5db912-5fc0-4f3f-b6ae-75a3bbf37bcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AltaShop'])[1]/following::div[5]</value>
+      <webElementGuid>81feed9c-7262-4b35-ac93-a753d0723589</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div</value>
+      <webElementGuid>160127a0-781b-4200-b2e7-08d8baeaafe1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'LaptopalatkesehatanRp 20400000 (5) ' or . = 'LaptopalatkesehatanRp 20400000 (5) ')]</value>
+      <webElementGuid>5ef360fb-e9df-4822-8914-4d4fa80b7c38</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
